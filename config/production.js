@@ -1,4 +1,4 @@
 module.exports = {
   // mongo url
-  mongoUrl: "mongodb://production.mongo.host/db"
+  mongoUrl: process.env.MONGODB_URI
 };

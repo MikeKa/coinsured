@@ -40,14 +40,6 @@ app.use('/', index);
 app.use('/users', users);
 app.use('/auth', auth);
 
-// use passport
-app.use(session({
-    secret: 's3cr3t',
-    resave: true,
-    saveUninitialized: true
-  }));
-app.use(passport.initialize());
-app.use(passport.session());
 
 //db connection
 mongoose.Promise = global.Promise;
