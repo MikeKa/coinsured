@@ -1,6 +1,7 @@
 var passport = require('passport')
   , FacebookStrategy = require('passport-facebook').Strategy;
 var User = require('../models/User');
+var fbCallback = config.get('fbCallback');
 
 passport.serializeUser(function (user, fn) {
     fn(null, user);

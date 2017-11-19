@@ -1,4 +1,4 @@
 module.exports = {
-  // mongo url
-  mongoUrl: "mongodb://localhost/mean-social"
+  mongoUrl: "mongodb://localhost/mean-social",
+  fbCallback: "http://localhost:3000/auth/facebook/callback"
 };
